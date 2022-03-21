@@ -2,4 +2,8 @@
 
 set -x
 
-cp packages/git/.gitconfig ~
+cd packages/git
+
+yay -S --noconfirm --repo git
+
+cp .gitconfig ~

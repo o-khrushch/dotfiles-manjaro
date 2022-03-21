@@ -28,9 +28,10 @@ sudo snap install --classic goland
 sudo snap install --classic rider
 sudo snap install --classic intellij-idea-ultimate
 
-# Install other
+# Packages
 sh packages/aws/aws.sh
 sh packages/elasticsearch/elasticsearch.sh
 sh packages/git/git.sh
 sh packages/node/node.sh
 sh packages/zsh/zsh.sh
+sh packages/ukrsib/ukrsib.sh
