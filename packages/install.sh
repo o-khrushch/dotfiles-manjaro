@@ -29,9 +29,8 @@ sudo snap install --classic rider
 sudo snap install --classic intellij-idea-ultimate
 
 # Packages
-sh packages/aws/aws.sh
-sh packages/elasticsearch/elasticsearch.sh
-sh packages/git/git.sh
-sh packages/node/node.sh
-sh packages/zsh/zsh.sh
-sh packages/ukrsib/ukrsib.sh
+for d in packages/*/ ; do
+  cd "$d"
+  sh "install.sh"
+  cd -
+done

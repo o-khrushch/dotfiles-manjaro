@@ -2,8 +2,6 @@
 
 set -x
 
-cd packages/zsh
-
 yay -S --noconfirm --repo zsh
 
 # Plugins

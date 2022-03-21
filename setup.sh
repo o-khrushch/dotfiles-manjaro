@@ -9,7 +9,6 @@ sudo pacman -S --noconfirm git base-devel yay
 sh ./packages/install.sh
 
 mkdir -p ~/dev
-sudo cp -r root/* /
 
 # Finish
 yay -Syyu --noconfirm
