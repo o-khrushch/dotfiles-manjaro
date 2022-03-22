@@ -4,7 +4,7 @@ set -x
 
 # Install repo
 yay -S --noconfirm --repo telegram-desktop php composer docker docker-compose go make neofetch \
-  discord xclip dotnet-runtime brave-browser redshift
+  discord xclip dotnet-runtime brave-browser redshift signal-desktop
 
 # Enable aur
 sudo sed -Ei '/EnableAUR/s/^#//' /etc/pamac.conf
