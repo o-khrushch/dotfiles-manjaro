@@ -1,20 +1,21 @@
 #!/bin/bash
 
-set -x
+set -Eeuox pipefail
 
 # Install repo
-yay -S --noconfirm --repo telegram-desktop php composer docker docker-compose go make neofetch libreoffice-still \
-  discord xclip dotnet-runtime aspnet-runtime dotnet-sdk brave-browser redshift signal-desktop
+yay -S --needed --noconfirm --repo telegram-desktop php composer docker docker-compose go make neofetch \
+  libreoffice-still discord xclip dotnet-runtime aspnet-runtime dotnet-sdk brave-browser redshift \
+  signal-desktop qBittorent
 
 # Enable aur
 sudo sed -Ei '/EnableAUR/s/^#//' /etc/pamac.conf
 sudo sed -Ei '/CheckAURUpdates/s/^#//' /etc/pamac.conf
 
 # Install aur
-yay -S --noconfirm --aur openfortigui postman-bin
+yay -S --needed --noconfirm --aur openfortigui postman-bin
 
 # Enable snap
-yay -S --noconfirm snapd libpamac-snap-plugin
+yay -S --needed --noconfirm snapd libpamac-snap-plugin
 sudo systemctl enable --now snapd.socket
 sudo ln -sf /var/lib/snapd/snap /snap
 sudo sed -Ei '/EnableSnap/s/^#//' /etc/pamac.conf

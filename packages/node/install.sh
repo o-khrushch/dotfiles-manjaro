@@ -1,7 +1,7 @@
 #!/bin/bash
 
-set -x
+set -Eeuox pipefail
 
-yay -S --noconfirm --repo nodejs npm nvm
+yay -S --needed --noconfirm --repo nodejs npm nvm
 
 sudo npm i -g yarn pnpm

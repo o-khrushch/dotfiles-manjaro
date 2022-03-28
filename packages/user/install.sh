@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -x
+set -Eeuox pipefail
 
 sudo cp -r backgrounds/* /usr/share/backgrounds
 sudo cp -r avatars/* /usr/share/avatars

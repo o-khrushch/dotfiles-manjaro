@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -x
+set -Eeuox pipefail
 
 if ! grep -q vm.max_map_count /etc/sysctl.d/99-sysctl.conf; then
   sudo sysctl -w vm.max_map_count=262144

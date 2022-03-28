@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -x
+set -Eeuox pipefail
 
 sudo pacman -Syyu --noconfirm
 sudo pacman -S --noconfirm git base-devel yay

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -x
+set -Eeuox pipefail
 
 unzip euswi.64.zip
 sudo mv -fn euswi.64/* /

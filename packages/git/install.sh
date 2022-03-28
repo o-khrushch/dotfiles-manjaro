@@ -1,7 +1,7 @@
 #!/bin/bash
 
-set -x
+set -Eeuox pipefail
 
-yay -S --noconfirm --repo git
+yay -S --needed --noconfirm --repo git
 
 cp .gitconfig ~
