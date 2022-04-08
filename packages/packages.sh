@@ -4,14 +4,14 @@ set -Eeuox pipefail
 
 # Install repo
 yay -S --needed --noconfirm --repo telegram-desktop php composer docker docker-compose go make neofetch \
-  libreoffice-still discord xclip brave-browser redshift signal-desktop qBittorent
+  libreoffice-still discord xclip brave-browser redshift signal-desktop qBittorent redis
 
 # Enable aur
 sudo sed -Ei '/EnableAUR/s/^#//' /etc/pamac.conf
 sudo sed -Ei '/CheckAURUpdates/s/^#//' /etc/pamac.conf
 
 # Install aur
-yay -S --needed --noconfirm --aur openfortigui postman-bin
+yay -S --needed --noconfirm --aur openfortigui postman-bin zoom
 
 # Enable snap
 yay -S --needed --noconfirm snapd libpamac-snap-plugin
