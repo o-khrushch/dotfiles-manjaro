@@ -11,7 +11,7 @@ sudo sed -Ei '/EnableAUR/s/^#//' /etc/pamac.conf
 sudo sed -Ei '/CheckAURUpdates/s/^#//' /etc/pamac.conf
 
 # Install aur
-yay -S --needed --noconfirm --aur openfortigui postman-bin zoom
+yay -S --needed --noconfirm --aur openfortigui postman-bin anydesk-bin zoom
 
 # Enable snap
 yay -S --needed --noconfirm snapd libpamac-snap-plugin
