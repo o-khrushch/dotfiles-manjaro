@@ -4,7 +4,7 @@ set -Eeuox pipefail
 
 # Install repo
 yay -S --needed --noconfirm --repo telegram-desktop php composer docker docker-compose go make neofetch \
-  libreoffice-still discord xclip brave-browser redshift signal-desktop qBittorent redis
+  libreoffice-still discord xclip brave-browser redshift signal-desktop qbittorrent redis
 
 # Enable aur
 sudo sed -Ei '/EnableAUR/s/^#//' /etc/pamac.conf
