@@ -2,7 +2,7 @@
 
 set -Eeuox pipefail
 
-yay -S --needed --noconfirm --repo dotnet-runtime aspnet-runtime dotnet-sdk
+yay -S --needed --noconfirm --repo dotnet-runtime aspnet-targeting-pack aspnet-runtime dotnet-sdk
 
 # Trust SSL certificate
 dotnet dev-certs https --clean
