@@ -12,6 +12,3 @@ fi
 if [ ! -d "$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting" ]; then
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
 fi
-
-sed "s/YOUR_PROFILE/$USER/g" .zshrc > ~/.zshrc
-cp .p10k.zsh ~

@@ -7,7 +7,7 @@ sudo pacman -S --noconfirm git base-devel yay
 
 mkdir -p ~/dev
 
-# Install
+# Install Packages
 sh ./packages/packages.sh
 
 # Finish
