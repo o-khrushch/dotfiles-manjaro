@@ -5,9 +5,11 @@ set -Eeuox pipefail
 sudo cp -r backgrounds/* /usr/share/backgrounds
 sudo cp -r avatars/* /usr/share/avatars
 
-for filePath in {icons,themes}/*.zip ; do
-  file="${filePath%%.*}"
-  if [ ! -d "/usr/share/${file}" ]; then
-    sudo unzip -j "$filePath" -d "/usr/share/$file"
-  fi
-done
+# Themes
+sudo unzip "themes/Sweet-Dark.zip" -d "/usr/share/themes"
+
+# Icons
+sudo unzip "icons/candy-icons.zip" -d "/usr/share/icons"
+
+# Fonts
+sudo unzip "fonts/jetbrains-mono.zip" -d "/usr/share/fonts/TTF"
