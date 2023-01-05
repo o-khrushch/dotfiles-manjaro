@@ -3,8 +3,8 @@
 set -Eeuox pipefail
 
 # Install repo
-yay -S --needed --noconfirm --repo telegram-desktop docker docker-compose go make neofetch vlc \
-  libreoffice-still xclip brave-browser redshift qbittorrent
+yay -S --needed --noconfirm --repo telegram-desktop docker docker-compose go make neofetch vlc mkcert \
+  xclip brave-browser redshift qbittorrent
 
 # Enable aur
 sudo sed -Ei '/EnableAUR/s/^#//' /etc/pamac.conf
