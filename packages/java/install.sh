@@ -2,6 +2,6 @@
 
 set -Eeuox pipefail
 
-yay -S --needed --noconfirm --repo java-17-openjdk
+yay -S --needed --noconfirm --repo jdk17-openjdk
 
 sudo archlinux-java set java-17-openjdk

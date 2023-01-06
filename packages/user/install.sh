@@ -2,8 +2,8 @@
 
 set -Eeuox pipefail
 
-sudo cp -r backgrounds/* /usr/share/backgrounds
-sudo cp -r avatars/* /usr/share/avatars
+sudo cp -a backgrounds/. /usr/share/backgrounds
+sudo cp -a avatars/. /usr/share/avatars
 
 # Themes
 sudo unzip "themes/Sweet-Dark.zip" -d "/usr/share/themes"
