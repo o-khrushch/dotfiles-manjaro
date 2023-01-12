@@ -4,7 +4,7 @@ set -Eeuox pipefail
 
 # Install repo
 yay -S --needed --noconfirm --repo telegram-desktop docker docker-compose go make neofetch vlc mkcert \
-  xclip brave-browser redshift qbittorrent
+  xclip brave-browser redshift qbittorrent net-tools
 
 # Enable aur
 sudo sed -Ei '/EnableAUR/s/^#//' /etc/pamac.conf
